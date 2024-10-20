@@ -1,14 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/assets/smiling_face_with_sunglasses-8Ws6nJNq.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/my-portfolio/assets/smiling_face_with_sunglasses-8Ws6nJNq.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaypal Sapara</title>
-    <script type="module" crossorigin src="/my-portfolio/assets/index-DqA1LX47.js"></script>
-    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-nG8ohYEq.css">
+    <script type="module" crossorigin src="/my-portfolio/assets/index-CADIjATG.js"></script>
+    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-AUPslkRs.css">
   </head>
   <body>
+    <div id="loader">
+      <svg class="container" viewBox="0 0 40 40" height="40" width="40">
+        <circle
+          class="track"
+          cx="20"
+          cy="20"
+          r="17.5"
+          pathlength="100"
+          stroke-width="5px"
+          fill="none"
+        />
+        <circle
+          class="car"
+          cx="20"
+          cy="20"
+          r="17.5"
+          pathlength="100"
+          stroke-width="5px"
+          fill="none"
+        />
+      </svg>
+    </div>
     <div id="root"></div>
   </body>
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loader").style.visibility = "visible";
+      } else {
+        document.querySelector("#loader").classList.add("loader-out");
+        setTimeout(() => document.querySelector("#loader").remove(), 1000);
+        document.querySelector("body").style.visibility = "visible";
+      }
+    };
+  </script>
 </html>
