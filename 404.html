@@ -8,7 +8,7 @@
     <link rel="stylesheet" crossorigin href="/assets/index-B9xjY2jz.css" />
   </head>
   <body>
-    <div id="root">
+    <div id="root" style="visibility: hidden;">
       <div className="w-full min-h-dvh grid place-content-center p-3">
         <div className="flex flex-col items-center text-center">
           <img src="/assets/404-CgQMYSoW.svg" className="w-full max-w-80" alt="" />
@@ -27,5 +27,8 @@
         </div>
       </div>
     </div>
+    <script>
+      window.onload = () => document.querySelector(`#root`).removeAttribute('style')
+    </script>
   </body>
 </html>
