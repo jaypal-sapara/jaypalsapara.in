@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://jaypalsapara.in/images/jaypal_icon.png"
-    />
-    <link 
-      rel="icon" 
-      type="image/x-icon" 
-      href="https://jaypalsapara.in/images/jaypal_icon.png"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jaypal Sapara</title>
-    <!-- Meta Tags -->
-    <meta name="title" content="Jaypal Sapara">
-    <meta name="description" content="Passionate web developer with expertise in various back-end and front-end technologies like Laravel, React, PHP, MySQL, JavaScript, Linux, and etc.">
-    <meta name="keywords" content="Jaypal Sapara, Sapara Jaypal, Web Developer, Laravel Developer, full stack developer, jaypal sapara, back-end developer, front-end developer">
-    <link rel="canonical" href="https://jaypalsapara.in/">
-    <meta name="theme-color" content="#e4e4e7" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)"  />
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Jaypal Sapara">
-    <meta property="og:description" content="Passionate web developer with expertise in various back-end and front-end technologies like Laravel, React, PHP, MySQL, JavaScript, Linux, and etc.">
-    <meta property="og:image" content="https://jaypalsapara.in/images/jaypal_icon.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <meta property="og:url" content="https://jaypalsapara.in/">
-    <meta property="og:type" content="Web Application">
-    <meta property="og:site_name" content="Jaypal Sapara - Portfolio">
-    <meta property="og:locale" content="en_US">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="https://jaypalsapara.in/images/jaypal_icon.png" />
+  <link rel="icon" type="image/x-icon" href="https://jaypalsapara.in/images/jaypal_icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaypal Sapara</title>
+  <!-- Meta Tags -->
+  <meta name="title" content="Jaypal Sapara">
+  <meta name="description"
+    content="Passionate web developer with expertise in various back-end and front-end technologies like Laravel, React, PHP, MySQL, JavaScript, Linux, and etc.">
+  <meta name="keywords"
+    content="Jaypal Sapara, Sapara Jaypal, Web Developer, Laravel Developer, full stack developer, jaypal sapara, back-end developer, front-end developer">
+  <link rel="canonical" href="https://jaypalsapara.in/">
+  <meta name="theme-color" content="#e4e4e7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)" />
 
-    <!--  Twitter Tags -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://jaypalsapara.in/">
-    <meta property="twitter:title" content="Jaypal Sapara">
-    <meta property="twitter:description" content="Passionate web developer with expertise in various back-end and front-end technologies like Laravel, React, PHP, MySQL, JavaScript, Linux, and etc.">
-    <meta property="twitter:image" content="https://jaypalsapara.in/images/jaypal_icon.png">
-    <script type="module" crossorigin src="/assets/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+  <!-- Facebook Meta Tags -->
+  <meta property="og:title" content="Jaypal Sapara">
+  <meta property="og:description"
+    content="Passionate web developer with expertise in various back-end and front-end technologies like Laravel, React, PHP, MySQL, JavaScript, Linux, and etc.">
+  <meta property="og:image" content="https://jaypalsapara.in/images/jaypal_icon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:url" content="https://jaypalsapara.in/">
+  <meta property="og:type" content="Web Application">
+  <meta property="og:site_name" content="Jaypal Sapara - Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!--  Twitter Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jaypalsapara.in/">
+  <meta property="twitter:title" content="Jaypal Sapara">
+  <meta property="twitter:description"
+    content="Passionate web developer with expertise in various back-end and front-end technologies like Laravel, React, PHP, MySQL, JavaScript, Linux, and etc.">
+  <meta property="twitter:image" content="https://jaypalsapara.in/images/jaypal_icon.png">
+  <script>
+    // prevent theme change stutter on first time load
+    document.querySelector('html').setAttribute('class', localStorage.getItem('theme') || 'light')
+  </script>
+  <script type="module" crossorigin src="/assets/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>
