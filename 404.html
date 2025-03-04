@@ -16,6 +16,21 @@
     />
     <!-- Title -->
     <title>Jaypal Sapara</title>
+    <!-- Theme -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <!-- Script -->
+    <script>
+      const isDark =
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches);
+      document.documentElement.classList.toggle("dark", isDark);
+      localStorage.theme = isDark ? "dark" : "light";
+    </script>
     <script type="module" crossorigin src="/assets/index.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index.css" />
   </head>
