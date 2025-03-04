@@ -8,26 +8,6 @@
     <link rel="stylesheet" crossorigin href="/assets/index.css" />
   </head>
   <body class="antialiased overflow-hidden">
-    <div id="root" style="visibility: hidden">
-      <div
-        className="flex min-h-dvh flex-col items-center justify-center font-mono"
-      >
-        <span className="mb-6 text-9xl font-bold">404</span>
-        <p className="mb-2 text-2xl">Not found</p>
-        <p
-          className="text-muted-foreground mb-4 max-w-[53ch] text-center text-pretty"
-        >
-          The page you were looking for doesn't exist. You may have mistyped the
-          address or the page may have moved.
-        </p>
-        <a href="/" className="text-muted-foreground underline">
-          Back to Home
-        </a>
-      </div>
-    </div>
-    <script>
-      window.onload = () =>
-        document.querySelector("#root").removeAttribute("style");
-    </script>
+    <div id="root"></div>
   </body>
 </html>
