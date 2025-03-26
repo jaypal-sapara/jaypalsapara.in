@@ -1,4 +1,4 @@
-import{j as e}from"./index.js";import{Q as s,B as a}from"./BackButtonSection-C3UgPkZ0.js";import{c as t,L as n,B as i}from"./BorderLine-C3pbe_ro.js";import{G as r}from"./GridSection-Cqh0gYuF.js";
+import{j as e}from"./index.js";import{Q as s,B as a}from"./BackButtonSection-CV51SHkO.js";import{c as t,L as n,B as i}from"./BorderLine-BKLI3Khl.js";import{G as r}from"./GridSection-Cqh0gYuF.js";
 /**
  * @license lucide-react v0.483.0 - ISC
  *
